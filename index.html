@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,60 +9,45 @@
 		.center {
 			text-align: center;
 		}
-
 		.right {
 			text-align: right;
 		}
-
 		.left {
 			text-align: left;
 		}
-
 		.marginleft {
 			margin-left: 15%;
 		}
-
 		.moremarginleft {
 			margin-left: 70%;
 		}
-
 		.boldcenter {
 			text-align: center;
 			font-weight: bold;
 		}
-
 		.boldcenterunderline {
 			text-align: center;
 			font-weight: bold;
 			text-decoration: underline;
 		}
-
 		.underline {
 			text-decoration: underline;
 		}
-
 		.justify {
-text-align: justify;
-
+			text-align: justify;
 		}
-
 		#left {
 			text-align: left;
 		}
-
 		#right {
 			text-align: right;
 		}
-
 		#center {
 			text-align: center;
 		}
-
 		.PaddingLeftTwenty {
 			padding-left: 25%;
 		}
-
-	
 		/* style for tab leader */
 		ul.leaders {
 			max-width: fit-content;
@@ -72,7 +56,6 @@ text-align: justify;
 			list-style-type: disc;
 			display: block;
 		}
-
 		ul.leaders li:after {
 			float: left;
 			width: 0;
@@ -82,12 +65,10 @@ text-align: justify;
 				". . . . . . . . . . . . . . . . . . . . "
 				". . . . . . . . . . . . . . . . . . . . "
 		}
-
 		ul.leaders span:first-child {
 			padding-right: 0.33em;
 			background: white
 		}
-
 		ul.leaders span+span {
 			float: right;
 			padding-left: 0.33em;
@@ -95,33 +76,289 @@ text-align: justify;
 			position: relative;
 			z-index: 1
 		}
-
 		.seperator:after {
 			content: "" !important;
 		}
+		body {
+			margin: 0;
+		}
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		.active {
+			background-color: #04AA6D;
+			color: white;
+		}
+		.topnav .icon {
+			display: none;
+		}
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+		.dropdown .dropbtn {
+			font-size: 17px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+		.dropdown-content {
+			display: none;
+			position: relative;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+		.topnav a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: #555;
+			color: white;
+		}
+		.dropdown-content a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		@media screen and (max-width: 600px) {
+			.topnav a:not(:first-child),
+			.dropdown .dropbtn {
+				display: none;
+			}
+			.topnav a.icon {
+				float: right;
+				display: block;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			.topnav.responsive {
+				position: relative;
+			}
+			.topnav.responsive .icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+			.topnav.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+			}
+			.topnav.responsive .dropdown {
+				float: none;
+			}
+			.topnav.responsive .dropdown-content {
+				position: relative;
+			}
+			.topnav.responsive .dropdown .dropbtn {
+				display: block;
+				width: 100%;
+				text-align: left;
+			}
+		}
+		.main {
+			padding: 16px;
+			margin-top: 30px;
+			height: 1500px;
+			/* Used in this example to enable scrolling */
+		}
 	</style>
 </head>
-
 <body>
-	<div class="center">श्री</div>
-	<div class="center">उच्च अदालत जनकपुर, राजविराज इजलास</div>
-	<div class="center">संयुक्त इजलास</div>
-	<div class="center">इजलास नं. ३</div>
-	<div class="center">माननीय न्यायाधीश श्री शान्तिसिंह थापा</div>
-	<div class="center">माननीय न्यायाधीश श्री तेज नारायण सिंह राई</div>
-	<div class="center">आदेश</div>
-	<div class="center">मुद्दा नं. ०७८-WO-०३२४</div><br>
-	<div class="">श्री जनता माध्यमिक विद्यालय ‍औरहा प्र.अ. शिक्षक प्रेम कुमार अधिकार .............१ </div>
-	<div class="PaddingLeftTwenty">विरुद्ध</div>
-	<div class="">शिक्षा विकास तथा समन्वय इकाई सिराहा समेत ...१ </div><br>
-	<div class="center">मुद्दाः– निषेधाज्ञा, उत्प्रेषण, मिश्रित परमादेश । </div><br>
-	<div class="justify">यसमा अन्तरिम आदेश सम्बन्धमा छलफलको लागि मिति २०७८।१२।२३ मा छलफलको लागि पेशी सूची चढाएकोमा उक्त दिन
-		माननीय न्यायाधीशज्यूहरुको सरुवा भई छलफल हुन नसकेकोले पुन: छलफलको मिति तोक्ने सम्बन्धमा साधसोधका लागि पेश हुन आएको
-		देखिँदा सो प्रयोजनका लागि मिति २०७९।२।३ मा छलफलको मिति तोकी उपस्थित पक्षहरुलाई तारेखमा राखी उच्च सरकारी वकील
-		कार्यालय राजविराजलाई छलफल पेशीको जानकारी दिई नियमानुसार पेश गर्नु । </div> <br>
+	<div class="topnav" id="myTopnav">
+		<a href="#TOC" class="active">TOC</a>
+		<div class="active">
+			<div class="dropdown">
+				<button class="dropbtn">WO
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#INTERIMORDERISSUED" class="active">निषेधाज्ञाःअ.आ.जारी</a>
+					<a href="#TAMELIADESH">तामेली आदेश</a>
+					<a href="#1xxx">I-X</a>
+				</div>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Civil
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#CH-II" class="active">II-17/38</a>
+				<a href="#II-25">LR-25</a>
+				<a href="#2xxx">II-X</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">CIVIL
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#MULTABIJAGAUNE">मुल्तवी जगाउने</a>
+				<a href="#III-52">Concept of JR (52)</a>
+				<a href="#3xxx">III-X</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">CRIMINAL
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#CH-IV">IV-130/170</a>
+				<a href="#IV-137">JRofUSA(137)</a>
+				<a href="#IV-150">JRofUK(150)</a>
+				<a href="#IV-165">JRofIndia(165)</a>
+				<a href="#4xxx">IV-X</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">OTHER
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#SAADSOD1">साधसोधः अ.आ. छलफल तोकेको मितिमा छलफल हुन नसकेको</a>
+				<a href="#V-178">JRinNepal(178)</a>
+				<a href="#5xxx">V-X</a>
+			</div>
+		</div>
+		<div class="topnav" id="myTopnav">
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">NOTES
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="#A2Z">A2Z</a>
+				<a href="#case2">case5</a>
+				<a href="#case3">case6</a>
+			</div>
+		</div>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+	<div class="">
+		<br><br><br>
+		<a id="SAADSOD1"></a>
+		<div class="center">श्री</div>
+		<div class="center">उच्च अदालत जनकपुर, राजविराज इजलास</div>
+		<div class="center">संयुक्त इजलास</div>
+		<div class="center">इजलास नं. ३</div>
+		<div class="center">माननीय न्यायाधीश श्री शान्तिसिंह थापा</div>
+		<div class="center">माननीय न्यायाधीश श्री तेज नारायण सिंह राई</div>
+		<div class="center">आदेश</div>
+		<div class="center">मुद्दा नं. ०७८-WO-०३२४</div><br>
+		<div class="">श्री जनता माध्यमिक विद्यालय ‍औरहा प्र.अ. शिक्षक प्रेम कुमार अधिकार .............१ </div>
+		<div class="PaddingLeftTwenty">विरुद्ध</div>
+		<div class="">शिक्षा विकास तथा समन्वय इकाई सिराहा समेत ...१ </div><br>
+		<div class="center">मुद्दाः– निषेधाज्ञा, उत्प्रेषण, मिश्रित परमादेश । </div><br>
+		<div class="justify">यसमा अन्तरिम आदेश सम्बन्धमा छलफलको लागि मिति २०७८।१२।२३ मा छलफलको लागि पेशी सूची चढाएकोमा उक्त
+			दिन
+			माननीय न्यायाधीशज्यूहरुको सरुवा भई छलफल हुन नसकेकोले पुन: छलफलको मिति तोक्ने सम्बन्धमा साधसोधका लागि पेश हुन आएको
+			देखिँदा सो प्रयोजनका लागि मिति २०७९।२।३ मा छलफलको मिति तोकी उपस्थित पक्षहरुलाई तारेखमा राखी उच्च सरकारी वकील
+			कार्यालय राजविराजलाई छलफल पेशीको जानकारी दिई नियमानुसार पेश गर्नु । </div> <br>
+		<div class="right">न्यायाधीश</div>
+		<div class="">न्यायाधीश</div><br>
+		<div class="">इति सम्वत् २०७९ साल वैशाख महिना १९ गते रोज २ शुभम् ...।</div><br>
+	</div>
+	<div class="">
+		<br><br><br>
+		<a id="INTERIMORDERISSUED"></a>
+		<div class="center">श्री</div>
+		<div class="center">उच्च अदालत जनकपुर, राजविराज इजलास</div>
+		<div class="center">संयुक्त इजलास</div>
+		<div class="center">इजलास नं. ३</div>
+		<div class="center">माननीय न्यायाधीश श्री शान्तिसिंह थापा</div>
+		<div class="center">माननीय न्यायाधीश श्री तेज नारायण सिंह राई</div>
+		<div class="center">आदेश</div>
+		<div class="center">मुद्दा नं. ०७8८-WO-०३४९</div>
+		<div class="">प्रयागलाल यादव ...१ </div>
+		<div class="">विरुद्ध</div>
+		<div class="">जिल्ला सप्तरी गाउँ पालिका रुपनीको कार्यालय समेत ...१ </div><br>
+		<div class="center">मुद्दाः– निषेधाज्ञा। </div><br>
+		यसमा अन्तरिम आदेशको छलफलको लागि पेश हुन आएको प्रस्तुत निवेदनमा निवेदकको तर्फबाट विद्बान अधिवक्ता श्री राम कुमार
+		यादव, सुरेन्द्र प्रसाद यादव, राम कुमार यादवले गर्नु भएको बहस समेत सुनियो।
+	</div><br>
+	<div class="">अन्तरिम आदेशको माग सम्वन्धमा विचार गर्दा, मिसिल संलग्न जग्गाधनि दर्ता प्रमाण पुर्जाको प्रतिलिपिबाट
+		निवेदनमा उल्लेखित कि.न. २८६ को जग्गा निवेदकका नाममा दर्ता रहेको देखिँएको हुँदा कानुन बमोजिम बाहेक प्रस्तुत निवेदनको
+		अन्तिम टुङ्गो नलागेसम्म उक्त कि.न. २८६ को जग्गामा निवेदकको मञ्जुरी सहमती वेगर जवरजस्ती प्रवेश नगर्नु, नगराउनु उक्त
+		जग्गा भोग चलनमा निवेदकलाई वाधा अवरोध नगर्नु, नगराउनु भनी विपक्षीहरुका नाममा उच्च अदालत नियमावली, २०७३को नियम ४२(१)
+		बमोजिम अन्तरिम आदेश जारी गरिदिएको छ। यो आदेशको जानकारी विपक्षीहरुलाई दिनु। </div>
 	<div class="right">न्यायाधीश</div>
 	<div class="">न्यायाधीश</div><br>
 	<div class="">इति सम्वत् २०७९ साल वैशाख महिना १९ गते रोज २ शुभम् ...।</div><br>
+	</div>
+	<div class="">
+		<br><br><br>
+		<a id="MULTABIJAGAUNE"></a>
+		<div class="center">श्री</div>
+		<div class="center">उच्च अदालत जनकपुर राजविराज इजलास</div>
+		<div class="center">संयुक्त इजलास</div>
+		<div class="center">इजलास नं. 1</div>
+		<div class="center">माननीय न्यायाधीश श्री तिल प्रसाद श्रेष्ठ</div>
+		<div class="center">माननीय न्यायाधीश श्री महेशप्रसाद पुडासैनी </div>
+		<div class="center">आदेश</div>
+		<div class="center">२०70 सालको DP-0724</div><br>
+		<div class="">रामनारायण चौधरी.......१</div>
+		<div class="">विरुद्व </div>
+		<div class="">अविरलाल चौधरी.....१</div>
+		<div class="center">मुद्दा- मोही नामसारी</div><br>
+		<div class="justify">यसमा, सप्तरी जिल्ला अदालतको 2070 सालको CG-0685 को किर्ते जालसाज मुद्दा सप्तरी जिल्ला अदालतवाट किनारा
+			भै आएपछी प्रस्तुत मुद्दा जगाउने गरी यस अदालतवाट मिति 2071/10/20 मा मुल्तवी आदेश रहेकोमा उक्त मुल्तवी आदेशमा
+			उल्लेखित 2070 सालको CG-0685 को किर्ते जालसाज मुद्दा सप्तरी जिल्ला अदालतवाट मिति 2073/02/11 मा फैसला भै यस अदालतको
+			७३-CP-०१०४ मा पुनरावेदन परी मिसिल प्राप्त भएको देखिदा प्रस्तुत मुद्दा मुल्तवीवाट जगाई दिएको छ । मुल्तवी रहदाका वखत
+			तारेखमा रहेका पक्षलाई ७ (सात) दिने जनाउ म्याद दिइ हाजिर भए वा अवधी व्यतित भएपछि 73-Cp-0104 को किर्ते जालसाज मुद्दा
+			समेत साथै राखी नियमानुसार गरी पेश गर्नु होला।</div><br><br>
+			<div class="right">न्यायाधीश</div>
+	<div class="">न्यायाधीश</div><br>
+		<div class="">इति सम्वत 2075 साल भाद्र महिना ०४ गते रोज २ शुभम्...।</div>
+	</div>
+	<div class="">
+		<br><br><br>
+		<a id="TAMELIADESH"></a>
+		<div class="center">श्री</div>
+		<div class="center">उच्च अदालत जनकपुर, राजविराज इजलास</div>
+		<div class="center">संयुक्त इजलास</div>
+		<div class="center">इजलास नं. ३</div>
+			<div class="center">माननीय न्यायाधीश श्री शान्तिसिंह थापा </div>
+		<div class="center">माननीय न्यायाधीश श्री मदन पोख्रेल </div>
+		<div class="center">तामेली आदेश</div>
+		<div class="center">०७8-WO -०095</div>
+		<div class="center">र.नं. 05-078-00250</div>
+		<div class="center">निर्णय नं.- 367</div><br>
+		<div class="">सिंहेश्वर महतो...1</div>
+		<div class="">बिरुद्ध</div>
+		<div class="">छिन्नमस्ता गाँउपालिकाको कार्यालय समेत...1</div><br>
+		<div class="center">मुद्दाः- परमादेश</div><br>
+			<div class="justify">नियमानुसार पेस हुन आएको प्रस्तुत मुद्दाको मिसिल अध्ययन गरी हेर्दा, निवेदकले यस अदालतबाट तोकिएको मिति २०७9/2/29 गतेको तारेख  गुजारी बसेको देखिएको, कानून बमोजिम थाम्ने थमाउने अवधी समेत बाँकी रहेको नदेखिएको र यसमा सार्वजनिक सरोकारको विषयवस्तु समावेश भएको नदेखिएको हुँदा उच्च अदालत नियमावली, २०७३ को नियम ५० बमोजिम प्रस्तुत रिट निवेदन तामेलीमा राखिदिएको छ। सरकोकारवालाले नक्कल माग गरे नियमानुसार नक्कल दिनु। मुद्दाको दायरीको लगत कट्टा गरी मिसिल अभिलेख फाँटमा बुझाई  दिनु। </div><br>
+		<div class="right">न्यायाधीश</div>
+	<div class="">न्यायाधीश</div><br>
+		<div class="">इति संवत् २०७9 साल असार महिना १9  गते रोज 1 शुभम्...।</div>
 </body>
-
 </html>
